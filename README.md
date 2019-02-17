@@ -6,7 +6,7 @@ This is a live document, it will be updated as we go, therefore at some point, y
 
 Here we go.
 
-1. **Jupyter Notebook is just a tool and therefore all the generic best practices of software development should apply to it.** This one is probably the most important part. Jupyter Notebook is like and Android Studio (or any other development tool), yes there are some best practices for the Android developers, however overall it would be strange to say that generic eng best practices do not apply to Android developers.
+1. **Jupyter Notebook is just a tool and therefore all the generic best practices of software development should apply to it.** This one is probably the most important part. Jupyter Notebook is like, for example, an Android Studio (or any other development tool), yes there are some best practices for the Android developers, however overall it would be strange to say that generic eng best practices do not apply to Android developers.
 1. **Jupyter Notebooks need to have version control system integration.** In order to un-block effective use of version control system like git, there should be tooling well integrated into the Jupyter UI that allows to effectively resolve conflicts for the notebook, view history of each cell, been able to commit/push particular parts of the notebook right from the cell.
 1. **Jupyter Notebooks should be self-contained.** There should be a way to determine the environment that is needed for the Notebook to be executed. For example, if the notebook requires Deep Learning VM M19 with some additional package installed there should be a way to determine this from the notebook itself.
 1. **There should be a way to pass input arguments to the Jupyter Notebooks.** 
