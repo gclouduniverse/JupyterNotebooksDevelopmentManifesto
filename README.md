@@ -12,7 +12,7 @@ Here we go.
 1. **Jupyter Notebooks need to have version control system integration.** In order to un-block effective use of version control system like git, there should be tooling well integrated into the Jupyter UI that allows to effectively resolve conflicts for the notebook, view history of each cell, been able to commit/push particular parts of the notebook right from the cell.
 1. **Jupyter Notebooks should be self-contained.** There should be a way to determine the environment that is needed for the Notebook to be executed. For example, if the notebook requires Deep Learning VM M19 with some additional package installed there should be a way to determine this from the notebook itself.
 1. **There should be a way to pass input arguments to the Jupyter Notebooks.** 
-1. **Each change to a Jupyter Notebook should be checked by continues integration system. (CI)**
+1. **Each change to a Jupyter Notebook should be checked by continuous integration system. (CI)**
 1. **Each version of a Jupyter Notebook that has passed all the tests should be used to automatically generate new artifact and deploy it. (CD)**
 
 Just imagine the world where you can start pre-commit checks of your changes that you have done to a notebook directly from the Jupyter Lab UI and immediately got a notification that Notebook now is not runnable when cells are executed one by one with a stack trace of a problem. Or, what about starting 10 background execution of the notebook with 10 different variables to see which arguments are better working, before committing? All these and much more absolutely possible if you following this manifesto rules.
