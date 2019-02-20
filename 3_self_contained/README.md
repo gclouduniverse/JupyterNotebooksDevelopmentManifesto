@@ -1,4 +1,4 @@
-# Better GIT integration for GCP DeepLearning VMs
+# Ability to submit self-contained notebooks for a background execution
 
 To use integration:
 
@@ -6,6 +6,6 @@ To use integration:
 * ssh to your VM (or use JupyterLab terminal)
 * follow the instructions:
    * git clone https://github.com/gclouduniverse/JupyterNotebooksDevelopmentManifesto.git
-   * cd JupyterNotebooksDevelopmentManifesto/git
-   * ./enable_git_support.sh
-* refresh JupyterLab window
+   * cd JupyterNotebooksDevelopmentManifesto/3_self_contained
+   * ./enable_notebook_submission.sh
+* now you can use following 2 commands: execute_notebook_with_gpu and execute_notebook_with_cpu

@@ -4,7 +4,7 @@ readonly DL_PATH="/opt/deeplearning"
 
 if [[ -f "${DL_PATH}" ]]; then
     echo "This script will work correctly only on GCP DeepLearning VM."
-    exit 0
+    exit 1
 fi
 
 source /opt/c2d/c2d-utils || exit 1
