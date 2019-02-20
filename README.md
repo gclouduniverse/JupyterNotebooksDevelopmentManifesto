@@ -1,5 +1,7 @@
 # Jupyter Notebooks Development Manifesto
 
+*this repository WILL eventually contain both: the maifesto and the tools that help to implement each of the items from the manifesto*
+
 Jupyter Notebook is a relatively young tool, it does not yet have best engineering practices. Like with any other tools if it is used by one-person-team on a small project for experimentation, very likely you do not need any eng practices (I have tons of small Python scripts that neither covered with tests nor have any CI/CD systems). However, if you using Jupyter Notebooks in a bigger project with many engineers it is hard to miss that this tool is not yet fully ready for the full-scale productional use.
 
 This manifesto combines things that I believe need to be implemented in order to solve some of the main pain points and make the life of any developer who is using Jupyter tools simpler and better.
