@@ -1,3 +1,7 @@
+# IMPORTANT
+
+Starting M21 release of Deep Learning VM everything in this folder already integrated to the DLVM and there is no need to run this scripts. Enjoy:)!
+
 # Better GIT integration for GCP DeepLearning VMs
 
 To use integration:
