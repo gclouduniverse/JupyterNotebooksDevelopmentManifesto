@@ -16,5 +16,6 @@ Here we go.
 1. **(Each change to a Jupyter Notebook should be checked by a) continuous integration system.**
 1. **Parameterized Notebooks**. There should be a way to pass input arguments to Jupyter Notebooks.
 1. **Continues delivery**. Each version of a Jupyter Notebook that has passed all the tests should be used to automatically generate a new artifact and deploy it.
+1. **Log all experiments automatically** Every time you try to train a model, various metadata about the training session should be automatically logged.  You'll want to keep track of things like: the code you ran, it's hyper parameters, the data source, the results, training time, etc. This will help you remember past results and you won't find yourself wondering "did I already try running this experiment"?
 
 Just imagine the world where you can start pre-commit checks of your changes that you have done to a notebook directly from the Jupyter Lab UI and immediately got a notification that Notebook now is not runnable when cells are executed one by one with a stack trace of a problem. Or, what about starting 10 background execution of the notebook with 10 different variables to see which arguments are better working, before committing? All these and much more absolutely possible if you following this manifesto rules.
