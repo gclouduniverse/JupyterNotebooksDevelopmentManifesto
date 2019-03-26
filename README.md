@@ -8,7 +8,9 @@ Jupyter Notebook is a relatively young tool, it does not yet have best engineeri
 
 This manifesto combines things that I believe need to be implemented in order to solve some of the main pain points and make the life of any developer who is using Jupyter tools simpler and better.
 
-Often times best practices are shared across multiple industries since the fundamentals remain the same.  Similarly, data scientists, ML researchers, and developers using Jupyter Notebooks should carry over the best practices already established by the fields of computer science and scientific research.  These best practices are adaptations of the ones from one or both of those fields.
+Often times best practices are shared across multiple industries since the fundamentals remain the same.  Similarly, data scientists, ML researchers, and developers using Jupyter Notebooks should carry over the best practices already established by the fields of computer science and scientific research.  
+
+The following best practices are adaptations of the ones established by those communities, highlighting principles that have withstood the test of time.
 
 1.  **Follow established software development best practices.** This one is probably the most important. Jupyter Notebook is just a tool, a new development environment for writing code. All the generic best practices of software development still apply to it.  
 1. **Version control your Notebooks.** In order to un-block effective use of version control system like git, there should be tooling well integrated into the Jupyter UI that allows to effectively resolve conflicts for the notebook, view history of each cell, been able to commit/push particular parts of the notebook right from the cell.
