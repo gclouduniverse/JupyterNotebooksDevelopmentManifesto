@@ -141,3 +141,16 @@ function execute_notebook_with_cpu() {
 EOH
 
 source $HOME/.bashrc
+
+git clone --branch v0.2.0 https://github.com/gclouduniverse/nova-jupyterlab-extensions.git "${HOME}/.nova"
+cd "${HOME}/.nova"
+sudo pip3 uninstall -y jupyterlab-nova
+sudo pip3 install .
+sudo service jupyter restart
+sudo jupyter labextension install
+
+git clone https://github.com/gclouduniverse/nova-agents.git "${HOME}/.nova-agents"
+cd "${HOME}/.nova-agents"
+git checkout 646f9846612255d6a7aed3d43c1bcb9528d0c96d
+"${HOME}/.nova-agents/nova-local-agent.sh" &
+
