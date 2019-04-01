@@ -151,6 +151,11 @@ sudo jupyter labextension install
 
 git clone https://github.com/gclouduniverse/nova-agents.git "${HOME}/.nova-agents"
 cd "${HOME}/.nova-agents"
-git checkout 646f9846612255d6a7aed3d43c1bcb9528d0c96d
-"${HOME}/.nova-agents/nova-local-agent.sh" &
+git checkout 99497d902c50440ccabd1e8748fee490d6cb2c14
+sudo cp ./nova-local-agent.sh /usr/bin/
+sudo cp ./nova-runner-agent.sh /usr/bin/
+sudo cp ./utils.sh /usr/bin/
+sudo cp ./nova.service /lib/systemd/system/
 
+sudo systemctl --no-reload --now enable /lib/systemd/system/nova.service
+sudo service nova start
