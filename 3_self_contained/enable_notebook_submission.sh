@@ -23,6 +23,7 @@ wget https://raw.githubusercontent.com/gclouduniverse/gcp-notebook-executor/v0.1
 
 cat <<-'EOH' >> "${HOME}/.bashrc"
 export NOTEBOOK_UTILS_PATH="${HOME}/.notebook_utils.sh"
+source "${NOTEBOOK_UTILS_PATH}"
 
 function execute_notebook_with_gpu() {
     if [ "$#" -ne 4 ]; then
