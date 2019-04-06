@@ -38,7 +38,7 @@ function execute_notebook_with_gpu() {
     GCP_PATH=$2
     GPU_TYPE=$3
     GPU_COUNT=$4
-    execute_execute_notebook -i "${INSTANCE_NAME}" -o "${GCP_PATH}" -f tf-latest-gpu -g "${GPU_TYPE}" -c "${GPU_COUNT}"
+    execute_notebook -i "${INSTANCE_NAME}" -o "${GCP_PATH}" -f tf-latest-gpu -g "${GPU_TYPE}" -c "${GPU_COUNT}"
     return $?
 }
 
@@ -52,7 +52,7 @@ function execute_notebook_with_cpu() {
         echo ""
         return 1
     fi 
-    execute_execute_notebook -i "${INSTANCE_NAME}" -o "${GCP_PATH}" -f tf-latest-cpu
+    execute_notebook -i "${INSTANCE_NAME}" -o "${GCP_PATH}" -f tf-latest-cpu
     return $?
 }
 EOH
