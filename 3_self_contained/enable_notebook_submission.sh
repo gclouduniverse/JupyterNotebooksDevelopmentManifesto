@@ -17,12 +17,12 @@ if cat "${HOME}/.bashrc" | grep -q execute_notebook_with_cpu; then
     exit 0
 fi
 
-readonly NOTEBOOK_UTILS_PATH="${HOME}/.notebook_utils.sh"
+NOTEBOOK_UTILS_PATH="${HOME}/.notebook_utils.sh"
 
 wget https://raw.githubusercontent.com/gclouduniverse/gcp-notebook-executor/v0.1.2/utils.sh -O "${NOTEBOOK_UTILS_PATH}"
 
 cat <<-'EOH' >> "${HOME}/.bashrc"
-readonly NOTEBOOK_UTILS_PATH="${HOME}/.notebook_utils.sh"
+export NOTEBOOK_UTILS_PATH="${HOME}/.notebook_utils.sh"
 
 function execute_notebook_with_gpu() {
     if [ "$#" -ne 4 ]; then
