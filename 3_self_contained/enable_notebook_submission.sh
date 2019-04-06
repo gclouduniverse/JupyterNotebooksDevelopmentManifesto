@@ -53,6 +53,8 @@ function execute_notebook_with_cpu() {
         echo ""
         return 1
     fi 
+    INSTANCE_NAME=$1
+    GCP_PATH=$2
     execute_notebook -i "${INSTANCE_NAME}" -o "${GCP_PATH}" -f tf-latest-cpu
     return $?
 }
